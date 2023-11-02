@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class DifferenceOfSquares {
   int squareOfSum(int inputValue) {
     int result = 0;
@@ -32,4 +34,17 @@ class DifferenceOfSquares {
 
     return squareOfSum - sumOfSquares;
   }
+
+  int squareOfSum2(int value) => pow(
+          List<int>.generate(value, (index) => index + 1)
+              .reduce((previous, current) => previous + current),
+          2)
+      .toInt();
+
+  int sumOfSquares2(int value) =>
+      List<int>.generate(value, (index) => pow(index + 1, 2).toInt())
+          .reduce((previous, current) => previous + current);
+
+  int differenceOfSquares2(int value) =>
+      squareOfSum(value) - sumOfSquares(value);
 }

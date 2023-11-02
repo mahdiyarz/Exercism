@@ -1,14 +1,17 @@
-import 'package:difference_of_squares/difference_of_squares.dart';
+import 'package:exercism/difference_of_squares.dart';
 import 'package:test/test.dart';
 
 final differenceOfSquares = DifferenceOfSquares();
 
 void main() {
-  group('DifferenceOfSquares: Square the sum of the numbers up to the given number - ',
+  group(
+      'DifferenceOfSquares: Square the sum of the numbers up to the given number - ',
       squareTheSumOfTheNumbersUpToTheGivenNumber);
-  group('DifferenceOfSquares: Sum the squares of the numbers up to the given number - ',
+  group(
+      'DifferenceOfSquares: Sum the squares of the numbers up to the given number - ',
       sumTheSquaresOfTheNumbersUpToTheGivenNumber);
-  group('DifferenceOfSquares: Subtract sum of squares from square of sums - ', subtractSumOfSquaresFromSquareOfSums);
+  group('DifferenceOfSquares: Subtract sum of squares from square of sums - ',
+      subtractSumOfSquaresFromSquareOfSums);
 }
 
 void squareTheSumOfTheNumbersUpToTheGivenNumber() {
